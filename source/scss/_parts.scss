@@ -1,0 +1,396 @@
+/**
+ *  パーツ
+ */
+/* つなぎ（モバイル表示用） */
+.attach {
+	@media ( max-width: $screen-xs-max ) {
+		height: 10px;
+		border-right: 1px $gray-slighter solid;
+		border-left: 1px $gray-slighter solid;
+	}
+}
+/* コンテンツタイトル（トップ、サイド） */
+.con-title {
+	position: relative;
+	@include gradient-vertical($gray-xlighter,$gray-mlightest);
+	margin: 0;
+	padding: 15px 0;
+	font-size: $font-size-midium;
+	border-bottom: 4px $brand-2nd solid;
+	.con-title-title {
+		display: inline-block;
+		margin: 0;
+		padding: 0 0 0 16px;
+		border-left: 7px $brand-primary solid;
+	}
+	.con-title-link {
+		background-image: url(../img/item-arrow06.png);
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: 6px 9px;
+		margin: 0 0 0 20px;
+		padding: 0 0 0 8px;
+		font-size: $font-size-small;
+		font-weight: normal;
+	}
+	.con-title-sub {
+		position: absolute;
+		top: 20px;
+		right: 10px;
+		font-weight: normal;
+		font-size: $font-size-xsmall;
+	}
+}
+.con-title-border {
+	border-top: 1px $brand-2nd solid;
+	border-right: 1px $brand-2nd solid;
+	border-left: 1px $brand-2nd solid;
+}
+/* バナーアイテム（下層、サイド） */
+.bnr-item {
+	border: 1px $brand-2nd-other solid;
+	font-weight: bold;
+	@include gradient-vertical($gray-xlighter,$gray-mlightest);
+	@media ( max-width: $screen-xs-max ) {
+		border-bottom: none;
+	}
+	&:last-child {
+		@media ( max-width: $screen-xs-max ) {
+			border-bottom: 1px $brand-2nd-other solid;
+		}
+	}
+	&:hover {
+		@include gradient-vertical(darken($gray-xlighter,2%),darken($gray-mlightest,2%));
+	}
+	a {
+		display: block;
+		position: relative;
+		padding: 8px;
+		color: $text-color;
+		&:after {
+			content: ' ';
+			position: absolute;
+			top: 20px;
+			right: 14px;
+			width: 18px;
+			height: 18px;
+			background-image: url(../img/item-arrow02.png);
+			background-repeat: no-repeat;
+			background-position: 100% center;
+			background-size: 18px 18px;
+			@media ( max-width: $screen-xs-max ) {
+				background-image: url(../img/item-arrow03.png);
+				right: 16px;
+			}
+		}
+		&:hover,
+		&:active {
+			text-decoration: none;
+		}
+	}
+	span {
+		display: inline-block;
+		margin: 0 0 0 10px;
+		@media ( max-width: $screen-sm-max ) {
+			position: relative;
+			top: -1px;
+			max-width: 5em;
+			vertical-align: middle;
+			margin: 0 0 0 4px;
+		}
+		@media ( max-width: $screen-xs-max ) {
+			max-width: 100%;
+		}
+	}
+}
+.bnr-item-noimg { // 画像なし
+	a {
+		padding: 20px 8px
+	}
+	span {
+		@media ( max-width: $screen-sm-max ) {
+			max-width: 8em;
+			top: -2px;
+		}
+	}
+}
+.bnr-item-lowcon { // 下層ページコンテンツ用 マルチクラスで使用
+	border: 1px $gray-lighter solid;
+	@include gradient-vertical($gray-slightest,$gray-slightest); // For IE9
+	background-image: none;
+	background-color: $gray-slightest;
+	font-weight: normal;
+	@media ( max-width: $screen-xs-max ) {
+		border-bottom: none;
+		&:last-child {
+			border-bottom: 1px $gray-lighter solid;
+		}
+	}
+	&:hover {
+		@include gradient-vertical(lighten($gray-slightest,5%),lighten($gray-slightest,5%)); // For IE9
+		background-image: none;
+		background-color: lighten($gray-slightest,5%);
+	}
+	a {
+		color: $brand-primary;
+		&:after {
+			top: 30px;
+			@media ( max-width: $screen-xs-max ) {
+				background-image: url(../img/item-arrow02.png);
+			}
+		}
+	}
+	span {
+		max-width: 21em;
+		vertical-align: middle;
+		@media ( max-width: $screen-md-max ) {
+			max-width: 16em;
+		}
+		@media ( max-width: $screen-sm-max ) {
+			max-width: 10em;
+			margin: 0 0 0 10px;
+		}
+	}
+}
+/* 新着リスト（トップ、下層） */
+.newlist { // <ul>
+	@include list-unstyled;
+	@media ( max-width: $screen-sm-max ) {
+		margin: 0;
+	}
+	li {
+		border-right: 1px $brand-2nd-other solid;
+		border-bottom: 1px $brand-2nd-other solid;
+		border-left: 1px $brand-2nd-other solid;
+		&:nth-child(2n+1) {
+			&:hover {
+				background-color: darken(#fff,5%);
+			}
+		}
+		&:nth-child(2n) {
+			background-color: $gray-newlist;
+			&:hover {
+				background-color: darken($gray-newlist,5%);
+			}
+		}
+	}
+	dl {
+		margin: 0;
+	}
+	dt {
+		display: table-cell;
+		width: 13.5em;
+		font-size: $font-size-small;
+		font-weight: normal;
+		white-space: nowrap;
+		@media ( max-width: $screen-sm-max ) {
+			display: block;
+			margin: 0 0 10px 0;
+		}
+	}
+	dd {
+		display: table-cell;
+		padding: 0 0 0 14px;
+		text-indent: -14px;
+		&:before {
+			content: '≫';
+			width: 10px;
+			height: 10px;
+			margin: 0 4px 0 0;
+			color: $brand-primary;
+		}
+		@media ( max-width: $screen-sm-max ) {
+			display: block;
+		}
+	}
+	a {
+		display: block;
+		color: $gray-slight;
+		padding: 20px;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	.newlist-tag {
+		margin: 0 0 0 2em;
+		padding: 3px 6px;
+		font-size: $font-size-xsmall;
+	}
+	.newlist-tag-info {
+		background-color: $tag-info;
+	}
+	.newlist-tag-news {
+		background-color: $tag-news;
+	}
+	.newlist-tag-topics {
+		background-color: $tag-topics;
+	}
+	.newlist-tag-other {
+		background-color: $tag-other;
+	}
+}
+.newlist-lowcon { // 下層ページコンテンツ用 マルチクラスで使用
+	border-top: 1px $brand-2nd-other solid;
+	@media ( max-width: $screen-xs-max ) {
+		margin: 0 0 20px 0;
+	}
+}
+/* テーブル */
+.table-odakyu { // <table>
+	border: none;
+	th {
+		background-color: $gray-lighter;
+		width: 20%;
+		font-weight: normal;
+	}
+	@media ( max-width: $screen-xs-max ) {
+		th {
+			display: block;
+			width: 100%;
+		}
+		td {
+			display: block;
+			width: 100%;
+		}
+	}
+}
+/* リスト */
+.cardlist {
+	@include list-unstyled;
+	li {
+		display: inline-block;
+		margin: 0 2px 0 0;
+		text-align: center;
+		img {
+			@include img-responsive;
+			margin: 0 auto;
+		}
+		span {
+			font-size: $font-size-small;
+		}
+	}
+}
+/* ボタン */
+/* 詳細はこちら */
+.btn-seedetail {
+	@include gradient-vertical-three-colors(#fff,$gray-slightest,20%,$gray-lightest);
+	span {
+		&:before {
+			content: '>';
+			width: 14px;
+			height: 14px;
+			margin: 0 4px 0 0;
+		}
+	}
+}
+.btn-inquiry {
+	@include gradient-vertical($brand-9th,$brand-8th);
+	padding: 16px;
+	font-weight: bold;
+	border: none;
+	white-space: normal;
+	&:hover,
+	&:active {
+		@include gradient-vertical(darken($brand-9th,5%),darken($brand-8th,5%));
+	}
+}
+/* テキスト */
+.clear {
+	clear: both;
+}
+.fs12 {
+	font-size: $font-size-small;
+}
+.fs16 {
+	font-size: $font-size-midium;
+}
+.fs28 {
+	font-size: $font-size-sdoublelarge;
+}
+.ffarial {
+	font-family: $font-family-odakyu-number;
+}
+.fwb {
+	font-weight: bold;
+}
+.fwn {
+	font-weight: normal;
+}
+.notice {
+	color: $txt-notice;
+}
+.style-normal {
+	font-style: normal;
+}
+.vm {
+	vertical-align: middle;
+}
+.w100 {
+	width: 100%;
+}
+.mr10 {
+	margin-right: 10px;
+}
+.mb10 {
+	margin-bottom: 10px;
+}
+.mb20 {
+	margin-bottom: 20px;
+}
+.xs-mb10 {
+	@media ( max-width: $screen-xs-max ) {
+		margin-bottom: 10px;
+	}
+}
+.xs-mb20 {
+	@media ( max-width: $screen-xs-max ) {
+		margin-bottom: 20px;
+	}
+}
+.mt0 {
+	margin-top: 0;
+}
+.mt10 {
+	margin-top: 10px;
+}
+.ml10 {
+	margin-left: 10px;
+}
+.pl0 {
+	padding-left: 0;
+}
+.pr0 {
+	padding-right: 0;
+}
+.xs-pl10 {
+	@media ( max-width: $screen-xs-max ) {
+		padding-left: 10px;
+	}
+}
+.xs-pl0 {
+	@media ( max-width: $screen-xs-max ) {
+		padding-left: 0;
+	}
+}
+.ofh {
+	overflow: hidden;
+}
+/* 背景カラー */
+/* グラデ */
+.bg-gradation01 {
+	@include gradient-vertical-three-colors(#fff,$gray-slightest,50%,$gray-lightest);
+}
+
+
+// google font
+// @import url(http://fonts.googleapis.com/css?family=Bitter);
+
+// Sprite image
+// @improt "xxx"; // improt sprite scss
+// Selector { // apply individually
+//     @include sprite($xxx);
+// }
+
+// mediaquery
+// @media ( max-width: $screen-sm-max ) {
+// }

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="ie9 ie"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="ja">
+<!--<![endif]-->
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>メインビジュアルの幅をサイト（レスポンシブ）の幅に合わせて固定しセンターに配置したい</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta property="og:title" content="Title">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="">
+<meta property="og:image" content="">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/component.css">
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script>window.html5 || document.write('<script src="js/html5shiv.min.js"><\/script>')</script>
+<![endif]-->
+</head>
+<body class="home cbp-spmenu-push" style="overflow: auto">
+<div class="text-center"><a class="sr-only sr-only-focusable" href="#main">Skip to CONTENTS</a></div>
+<header class="top-header" id="page-top">
+	<div class="container">
+		<div class="navbar navbar-default">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#odakyu-collapse" id="showRightPush"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<div class="ci-outer">
+					<h1 class="ci"><a class="navbar-brand" href="http://www.odakyu-koutsu.co.jp/">Brand</a></h1>
+				</div>
+				<!-- / .ci-outer -->
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse gnav" id="cbp-spmenu-s2">
+				<!-- <nav class="navbar-collapse gnav cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right collapse navbar-collapse gnav"> -->
+				<nav>
+					<h2 class="sr-only">グルーバルナビゲーション</h2>
+					<ul class="sf-menu">
+						<li class="sf-menu01"><a href="#" data-toggle="collapse" data-target="#demo">メニュー1</a>
+							<ul id="demo" class="collapse in">
+								<li><a href="#">サブメニュー1-1</a></li>
+								<li><img src="img/item-bar01.png" alt="区切り"></li>
+								<li><a href="#">サブメニュー1-2</a></li>
+								<li><img src="img/item-bar01.png" alt="区切り"></li>
+								<li><a href="#">サブメニュー1-2</a></li>
+							</ul>
+						</li>
+						<li class="sf-menu02"><a href="#" data-toggle="collapse" data-target="#demo1">メニュー2</a>
+							<ul id="demo1" class="collapse in">
+								<li><a href="#">サブメニュー2-1</a></li>
+								<li><img src="img/item-bar01.png" alt="区切り"></li>
+								<li><a href="#">サブメニュー2-2</a></li>
+								<li><img src="img/item-bar01.png" alt="区切り"></li>
+								<li><a href="#">サブメニュー2-3</a></li>
+								<li><img src="img/item-bar01.png" alt="区切り"></li>
+								<li><a href="#">サブメニュー2-4</a></li>
+								<li><img src="img/item-bar01.png" alt="区切り"></li>
+								<li><a href="#">サブメニュー2-5</a></li>
+								<li><img src="img/item-bar01.png" alt="区切り"></li>
+								<li><a href="#">サブメニュー2-6</a></li>
+								<li><img src="img/item-bar01.png" alt="区切り"></li>
+								<li><a href="#">サブメニュー2-7</a></li>
+								<li><img src="img/item-bar01.png" alt="区切り"></li>
+								<li><a href="#">サブメニュー2-8</a></li>
+							</ul>
+						</li>
+						<li class="sf-menu03"><a href="#" data-toggle="collapse" data-target="#demo2">メニュー3</a></li>
+						<li class="sf-menu04"><a href="#" data-toggle="collapse" data-target="#demo3">メニュー4</a></li>
+						<li class="sf-menu05"><a href="#" data-toggle="collapse" data-target="#demo4">メニュー5</a>
+							<ul id="demo4" class="collapse in">
+								<li><a href="#">サブメニュー5-1</a></li>
+								<li><img src="img/item-bar01.png" alt="区切り"></li>
+								<li><a href="#">サブメニュー5-2</a></li>
+								<li><img src="img/item-bar01.png" alt="区切り"></li>
+								<li><a href="#">サブメニュー5-3</a></li>
+								<li><img src="img/item-bar01.png" alt="区切り"></li>
+								<li><a href="#">サブメニュー5-4</a></li>
+								<li><img src="img/item-bar01.png" alt="区切り"></li>
+								<li><a href="#">サブメニュー5-6</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- /.navbar-collapse .gnav -->
+		</div>
+		<!-- / .navbar navbar-default -->
+	</div>
+	<!-- / .container -->
+</header>
+<div class="blue-bar"></div>
+<div class="blue-bar-2row"></div>
+<div class="visual">
+	<div class="test-carousel">
+		<div class="test-carousel-item"><a href="#"><span class="hidden-xs"><img src="img/img-carousel01.jpg" alt=""></span><span class="visible-xs-inline"><img src="img/img-carousel01-xs.jpg" alt=""></span></a></div>
+		<div class="test-carousel-item"><a href="#"><span class="hidden-xs"><img src="img/img-carousel02.jpg" alt=""></span><span class="visible-xs-inline"><img src="img/img-carousel02-xs.jpg" alt=""></span></a></div>
+		<div class="test-carousel-item"><a href="#"><span class="hidden-xs"><img src="img/img-carousel03.jpg" alt=""></span><span class="visible-xs-inline"><img src="img/img-carousel03-xs.jpg" alt=""></span></a></div>
+		<div class="test-carousel-item"><a href="#"><span class="hidden-xs"><img src="img/img-carousel04.jpg" alt=""></span><span class="visible-xs-inline"><img src="img/img-carousel04-xs.jpg" alt=""></span></a></div>
+	</div>
+</div>
+<!-- / .visual -->
+<!-- / .container -->
+<div class="container">
+	<div class="contents">
+		<div id="main" class="main">
+			<h2 class="con-title con-title-border"><span class="con-title-title">新着情報</span><span class="con-title-link"><a href="#">バックナンバー</a></span><small class="con-title-sub">WHAT'S NEW</small></h2>
+			<ul class="newlist">
+				<li><a href="#">
+					<dl>
+						<dt>2014.12.25<span class="newlist-tag newlist-tag-info">お知らせ</span></dt>
+						<dd>お知らせ１</dd>
+					</dl>
+					</a> </li>
+				<li><a href="#">
+					<dl>
+						<dt>2014.11.10<span class="newlist-tag newlist-tag-news">ニュース</span></dt>
+						<dd>お知らせ２</dd>
+					</dl>
+					</a> </li>
+				<li><a href="#">
+					<dl>
+						<dt>2014.10.17<span class="newlist-tag newlist-tag-topics">トピックス</span></dt>
+						<dd>お知らせ３</dd>
+					</dl>
+					</a> </li>
+				<li><a href="#">
+					<dl>
+						<dt>2014.08.14<span class="newlist-tag newlist-tag-other">その他</span></dt>
+						<dd>お知らせ４</dd>
+					</dl>
+					</a> </li>
+				<li><a href="#">
+					<dl>
+						<dt>2014.04.01<span class="newlist-tag newlist-tag-news">ニュース</span></dt>
+						<dd>お知らせ５</dd>
+					</dl>
+					</a> </li>
+				<li><a href="#">
+					<dl>
+						<dt>2014.03.05<span class="newlist-tag newlist-tag-info">お知らせ</span></dt>
+						<dd>お知らせ６</dd>
+					</dl>
+					</a> </li>
+			</ul>
+			<!-- / .newlist -->
+			<div class="attach"></div>
+		</div>
+		<!-- / #main -->
+		<div class="side">
+			<div class="side-con-item side-con-item-noboder">
+				<h2 class="con-title"><span class="con-title-title">採用情報</span><small class="con-title-sub">RECRUIT</small></h2>
+				<p class="side-con-item-img"><img class="img-responsive" src="img/pic-side04.jpg" alt=""></p>
+				<ul class="side-con-item-list">
+					<li><a href="#">経験者募集</a></li>
+					<li><a href="#">第２新卒募集</a></li>
+					<li><a href="#">新卒募集</a></li>
+				</ul>
+			</div>
+			<!-- / .side-con-item -->
+			<div class="side-con-item">
+				<h2 class="con-title"><span class="con-title-title">会社情報</span><small class="con-title-sub">COMPANY</small></h2>
+				<p class="side-con-item-img"><img class="img-responsive" src="img/pic-side05.jpg" alt=""></p>
+				<ul class="side-con-item-list">
+					<li><a href="#">会社概要</a></li>
+					<li><a href="#">事業内容</a></li>
+					<li><a href="#">CSR情報</a></li>
+					<li><a href="#">関係会社</a></li>
+				</ul>
+			</div>
+			<!-- / .side-con-item -->
+			<div class="attach"></div>
+			<p class="bnr-item bnr-item-noimg"><a href="#"><span>お問い合わせ</span></a></p>
+		</div>
+		<!-- / .side -->
+	</div>
+	<!-- / .contents -->
+</div>
+<!-- / .container -->
+<footer class="footer">
+	<div class="container">
+		<p class="page-top"><a href="#page-top">ページトップへ戻る</a></p>
+	</div>
+	<!-- / .container -->
+	<div class="fnav-outer">
+		<div class="container">
+			<nav>
+				<h2 class="sr-only">フッターナビゲーション</h2>
+				<ul class="fnav">
+					<li><a href="#">メニュー1</a>
+						<hr>
+						<ul>
+							<li><a href="#">メニュー1-1</a></li>
+							<li><a href="#">メニュー1-2</a></li>
+							<li><a href="#">メニュー1-3</a></li>
+							<li><a href="#">メニュー1-4</a></li>
+						</ul>
+					</li>
+					<li><a href="#">メニュー2</a>
+						<hr>
+						<ul>
+							<li><a href="#">メニュー2-1</a></li>
+							<li><a href="#">メニュー2-2</a></li>
+							<li><a href="#">メニュー2-3</a></li>
+							<li><a href="#">メニュー2-4</a></li>
+							<li><a href="#">メニュー2-5</a></li>
+							<li><a href="#">メニュー2-6</a></li>
+						</ul>
+					</li>
+					<li><a href="#">メニュー3</a>
+						<hr>
+						<ul>
+							<li><a href="#">メニュー3-1</a></li>
+							<li><a href="#">メニュー3-2</a></li>
+							<li><a href="#">メニュー3-3</a></li>
+							<li><a href="#">メニュー3-4</a></li>
+							<li><a href="#">メニュー3-5</a></li>
+						</ul>
+					</li>
+					<li><a href="#">メニュー4</a>
+						<hr>
+						<ul>
+							<li><a href="#">メニュー4-1</a></li>
+							<li><a href="#">メニュー4-2</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- / .container -->
+	</div>
+	<!-- / .fnav-outer -->
+	<div class="fnav-sub-outer">
+		<div class="container">
+			<ul class="fnav-sub">
+				<li><a href="#">サブフッターメニュー1</a></li>
+				<li><a href="#">サブフッターメニュー2</a></li>
+				<li><a href="#">サブフッターメニュー3</a></li>
+				<li><a href="#">サブフッターメニュー4</a></li>
+				<li><a href="#">サブフッターメニュー5</a></li>
+			</ul>
+		</div>
+		<!-- / .container -->
+	</div>
+	<!-- / .fnav-sub-outer -->
+	<div class="container">
+		<p class="copyright"><small>&copy; Some Comapny</small></p>
+	</div>
+	<!-- / .container -->
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="js/collapse.js"></script>
+<script src="js/transition.js"></script>
+<script src="js/hoverIntent.js"></script>
+<script src="js/superfish.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/top-carousel.js"></script>
+<script src="js/style.js"></script>
+<script src="js/classie.js"></script>
+<script>
+			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+			showRightPush.onclick = function() {
+				//classie.toggle( this, 'active' );
+
+				classie.toggle( body, 'cbp-spmenu-push-toleft' );
+
+
+				if(body.style.overflow == "hidden"){
+					body.style.overflow = "auto";
+				}
+				else{
+					body.style.overflow = "hidden";
+				}
+				classie.toggle(menuRight, 'collapse');
+				classie.toggle(menuRight, 'cbp-spmenu');
+				classie.toggle(menuRight, 'cbp-spmenu-vertical');
+				classie.toggle(menuRight, 'cbp-spmenu-right');
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+			};
+
+			// if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/)) {
+
+			// 	}
+
+
+		</script>
+</body>
+</html>
